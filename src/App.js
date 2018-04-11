@@ -4,7 +4,7 @@ import {Letters} from './Letters.js';
 
 
 
-const word = "Quenelle" 
+const word = "Reactjs" 
 
 class App extends Component {
   /*constructor(props) {
