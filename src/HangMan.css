@@ -1,0 +1,42 @@
+.hangman-container {
+	position: relative;
+	margin-left: calc(50% - 225px);
+	width: 450px;
+	height: 361px;
+	margin-top: 50px;
+	box-shadow: 3px 3px 5px 6px grey;
+}
+
+.hangman-container img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.hung {
+	
+	animation: hangingOut 6s infinite linear;
+}
+
+@keyframes hangingOut {
+	0% {
+		margin-top: -10px;
+		transform: rotate(0deg);
+	}
+	25% {
+		margin-top: -20px;
+		transform: rotate(25deg);
+	}
+	50% {
+		margin-top: -10px;
+		transform: rotate(0deg);
+	}
+	75% {
+		margin-top: -10px;
+		transform: rotate(-25deg);
+	}
+	100% {
+		margin-top: -20px;
+		transform: rotate(0deg);
+	}
+}
